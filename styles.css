@@ -271,19 +271,19 @@ nav {
 #ri-map-pin-line-one {
   position: absolute;
   margin-top: 0px;
-  right: 93px;
+  right: 86px;
 }
 
 #ri-map-pin-line-two {
   position: absolute;
   margin-top: 0px;
-  right: 93px;
+  right: 86px;
 }
 
 #ri-map-pin-line-three {
   position: absolute;
   margin-top: 0px;
-  right: 93px;
+  right: 86px;
 }
 
 /* Container geral da seção */
@@ -398,14 +398,14 @@ div.descricao__one {
 
 div.descricao__two {
   position: relative;
-  margin-top: -232px;
+  margin-top: -325px;
   margin-bottom: 100px;
   left: 485px;
 }
 
 div.descricao__three {
   position: relative;
-  margin-top: -232px;
+  margin-top: -325px;
   margin-bottom: 50px;
   left: 880px;
 }
@@ -428,7 +428,13 @@ div.descricao__three {
 
 .about_content {
   margin-right: 320px; /* abre espaço pro lado da imagem */
-  margin-bottom: -80px;
+  margin-bottom: -30px;
+}
+
+#about {
+  position: relative;
+  margin-top: 30px;
+  height: 500px;
 }
 
 .about__image {
@@ -437,7 +443,7 @@ div.descricao__three {
 
 .about__image img {
   position: absolute;
-  bottom: -220px;
+  bottom: -200px;
   right: -30px;
   width: 380px;
   height: auto;
@@ -488,21 +494,49 @@ h3 {
   justify-content: space-between;
 }
 
-.project__nav {
+.project__nav__destaques {
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
   gap: 1rem;
 }
 
-.project__nav span {
+.project__nav__destaques p {
+  position: relative;
+  margin-top: 15px;
+}
+
+.project__nav__destaques span {
   font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.project__nav span:hover {
+.project__nav__destaques span:hover {
+  color: var(--primary-color-dark);
+}
+
+.project__nav__exclusivos {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+
+.project__nav__exclusivos p {
+  position: relative;
+  margin-top: 15px;
+}
+
+.project__nav__exclusivos span {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project__nav__exclusivos span:hover {
   color: var(--primary-color-dark);
 }
 
