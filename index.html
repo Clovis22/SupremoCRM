@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Supremo CRM</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__bar">
+            <div class="header__image__logo" id="home">
+              <a href="#home">
+                <img src="assets/SupremoCRM.png" alt="supremoCRMLogo" />
+              </a>
+            </div>
+            <div class="nav__logo"></div>
+            <ul class="nav__links">
+                <li class="link"><a href="#home">INÍCIO</a></li>
+                <li class="link"><a href="#about">SOBRE</a></li>
+                <li class="link"><a href="#exclusivos">EXCLUSIVOS</a></li>
+                <li class="link"><a href="#contact">CONTATO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+      <div class="search-bar">
+        <div class="bg-dark bg-opacity-75 rounded p-4 mt-4 d-flex flex-wrap justify-content-center gap-2">
+          <select class="form-select w-auto"><option>Tipos</option></select>
+          <select class="form-select w-auto"><option>Cidades</option></select>
+          <select class="form-select w-auto"><option>Bairros</option></select>
+          <select class="form-select w-auto"><option>Valor</option></select>
+          <input type="text" class="form-control w-auto" placeholder="Código">
+          <button class="btn btn-warning px-4"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+        <div class="header__container">
+            <div class="header__content">
+              <h1>Uma casa construída e única com amor e sonhos</h1>
+              <p>
+                Descubra uma seleção criteriosa de casas, apartamentos e imóveis comerciais,
+                além de dicas de especialistas, insights de mercado e recursos
+                valiosos para ajudar você a tomar as melhores decisões imobiliárias. Junte-se a nós
+                hoje e vamos abrir as portas do imóvel dos seus sonhos!
+              </p>
+              <div class="header__btns">
+                <button class="btn btn__secondary">Comprar Agora</button>
+                <button class="btn btn__primary">Saiba Mais</button>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__container info__imoveis__container" id="imoveis">
+      <div class="titulo">
+        <h2><b>Conheça Nossos Imóveis</b></h2>
+      </div>
+      <div class="sub-titulo">
+        <h5>O que nossos visitantes mais procuram em nosso site.</h5>
+      </div>
+    
+      <div class="info__imoveis__boxes">
+        <div class="info__imoveis__image__one info__imoveis__box">
+          <img src="assets/Itajai.jpg" alt="imoveis" />
+          <h3>Itajaí</h3>
+          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-one"></i></span>Santa Catarina</h2>
+          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+    
+        <div class="info__imoveis__image__two info__imoveis__box">
+          <img src="assets/PraiaBrava.jpg" alt="imoveis" />
+          <h3>Praia Brava</h3>
+          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-two"></i></span>Santa Catarina</h2>
+          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+
+        <div class="info__imoveis__image__three info__imoveis__box">
+          <img src="assets/BalnearioCamboriu.jpg" alt="imoveis" />
+          <h3>Bauneário Camboriú</h3>
+          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-three"></i></span>Santa Catarina</h2>
+          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+        </div>
+      </div>
+    </section> 
+    <div class="descricao__container"> 
+      <div class="descricao__one">
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos no Bairro Fazenda</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos com 3 quartos em Itajaí</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Lançamentos em Itajaí</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos acima do 100m&sup2; em Itajaí</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos Mobiliados em Itajaí</b></span></p>
+        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
+      </div>
+      <div class="descricao__two">
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos na Praia Brava</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Mobiliados na Praia Brava</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Frente mar na Praia Brava</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>3 quartos na Praia Brava</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Lançamentos na Praia Brava</b></span></p>
+        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
+      </div>
+      <div class="descricao__three">
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Cobertura Balneário Camboriú</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamento em Balneário Camboriú</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Balneário Camboriú 3 quartos</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Frente mar Balneário Camboriú</b></span></p>
+        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Mobiliados em Balneário Camboriú</b></span></p>
+        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
+      </div>
+    </div>
+
+    <section class="section__container descricao__container" id="descricao">
+      <!-- Linha separadora -->
+      <div class="descricao__line"></div>
+    </section>
+
+    <section class="project__container__one" id="destaques">
+      <div class="project__header">
+        <div>
+          <h2 class="section__header__destaques">Destaques</h2>
+        </div>
+        <div class="project__nav">
+          <p>Ver mais</p>
+          <span class="arrow-left-one"><i class="ri-arrow-left-line"></i></span>
+          <span class="arrow-right-one"><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper" id="swiper__one">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-1.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Brava Select . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Conselheiro Júlio Kumm - Praia Brava, Itajaí
+                    <br><br>
+                    100m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$2.400.000 Cód. 21</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-2.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Splendore . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Flamboyants - Praia Brava, Itajaí
+                    <br><br>
+                    123m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                  </div>
+                  <div class="price">R$3.100.000 Cód. 18</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-3.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Torres da Brava Sirena . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Luci Canziani - Praia Brava, Itajaí
+                    <br><br>
+                    110m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserva Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <div class="price">R$2.180.000 Cód. 16</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-4.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Horizontal Praia Brava</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Av. Márcio Ferreira de Mello e Silva - Praia Brava, Itajaí
+                    <br><br>
+                    120m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                  </div>
+                  <div class="price">R$2.300.000 Cód. 14</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-5.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Riviera Concept</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Av. Osvaldo Reis, 3385 - Itajaí - SC
+                    <br><br>
+                    150m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$2.010.000 Cód.21</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-6.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Brava Home Resort</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    R. Delfim Mário de Pádua Peixoto, 350 - Itajaí - SC
+                    <br><br>
+                    160m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$3.010.000 Cód.17</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="swiper-button-prev-destaques"><div class="swiper-button-prev"></div></span>
+        <span class="swiper-button-next-destaques"><div class="swiper-button-next"></div></span>
+      </div>
+    </section>
+
+    <section class="project__container__two" id="exclusivos">
+      <div class="project__header">
+        <div>
+          <h2 class="section__header__exclusivos">Exclusivos</h2>
+        </div>
+        <div class="project__nav">
+          <p>Ver mais</p>
+          <span class="arrow-left-two"><i class="ri-arrow-left-line"></i></span>
+          <span class="arrow-right-two"><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper" id="swiper__two">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-1.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Brava Select . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Conselheiro Júlio Kumm - Praia Brava, Itajaí
+                    <br><br>
+                    100m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$2.400.000 Cód. 21</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-2.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Splendore . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Flamboyants - Praia Brava, Itajaí
+                    <br><br>
+                    123m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                  </div>
+                  <div class="price">R$3.100.000 Cód. 18</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-3.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Torres da Brava Sirena . Apartamento</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Rua Luci Canziani - Praia Brava, Itajaí
+                    <br><br>
+                    110m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserva Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <div class="price">R$2.180.000 Cód. 16</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-4.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Horizontal Praia Brava</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Av. Márcio Ferreira de Mello e Silva - Praia Brava, Itajaí
+                    <br><br>
+                    120m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                  </div>
+                  <div class="price">R$2.300.000 Cód. 14</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-5.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Riviera Concept</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    Av. Osvaldo Reis, 3385 - Itajaí - SC
+                    <br><br>
+                    150m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$2.010.000 Cód.21</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project__card">
+              <img src="assets/project-6.jpg" alt="project" />
+              <div class="project__content">
+                <div class="project__details">
+                  <h4>Brava Home Resort</h4>
+                  <p>
+                    <span><i class="ri-map-pin-line"></i></span>
+                    R. Delfim Mário de Pádua Peixoto, 350 - Itajaí - SC
+                    <br><br>
+                    160m&sup2; .  3quartos . 1suíte . 2vagas
+                  </p>
+                  <button>Reserve Agora</button>
+                </div>
+                <div class="project__ratings">
+                  <div class="stars">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <div class="price">R$3.010.000 Cód.17</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="swiper-button-prev-exclusivos"><div class="swiper-button-prev"></div></span>
+        <span class="swiper-button-next-exclusivos"><div class="swiper-button-next"></div></span>
+      </div>
+    </section>
+
+    <section class="about__container__primary">
+    <section class="section__container about__container" id="about">
+      <div class="about_content">
+          <h3>Sobre nós</h3>
+          <h2 class="section_header"> Supremo CRM </h2>
+          <p class="section__subheader">
+            Nossa missão é encontrar a melhor solução para os clientes no mercado
+            imobiliário, proporcionando retorno financeiro e satisfação com o investimento
+            realizado.
+            <br><br>
+            Localizada na belíssima Praia Brava, em Itajaí/SC, a Adamante Negócios é uma
+            imobiliária focada nas pessoas, em seus desejos e em maximizar o retorno para
+            seus investimentos. Proporciona consultoria  personalizada e abre caminhos para 
+            a realização de negócios imobiliários surpreendentes. Conhecimento do mercado,
+            segurança, confiança e transparência, estão sempre presentes na busca pela
+            excelência na realização de cada negócio. Venha nos conhecer e entender como
+            podemos fazer a diferença na sua aquisição imobiliária no litoral catarinense.
+            <br><br>
+            Ver mais <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </p>
+        </div>
+        <div class="about__image">
+          <img src="assets/SobreNos.png" alt="about">
+      </div>
+    </section>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+      <div class="contact__image">
+        <img src="assets/contact.jpg" alt="contact" />
+      </div>
+      <div class="contact__content">
+        <h2 class="section__header">Contate-nos</h2>
+        <p class="section__subheader">
+          Descubra a diferença, onde a expertise encontra a excelência no mercado imobiliário.
+          Vamos embarcar nessa jornada emocionante juntos.
+        </p>
+        <form action="#">
+          <div class="form__group">
+            <input type="text" placeholder="Primeiro Nome" />
+            <input type="text" placeholder="Sobrenome" />
+          </div>
+          <div class="form__group">
+            <input type="text" placeholder="Endereço de E-mail" />
+            <input type="text" placeholder="Número de Telefone" />
+          </div>
+          <textarea cols="30" rows="5" placeholder="Descrição"></textarea>
+          <button>Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section__container info__container" id="informacoes">
+      <div class="info__image__one info__box">
+        <p>Anuncie</p>
+        <img src="assets/contact.jpg" alt="informacoes" />
+        <h3>Seu Imóvel</h3>
+        <h2>Anunciar</h2>
+        <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="info__image__two info__box">
+        <p>Conheça a nossa</p>
+        <img src="assets/contact.jpg" alt="informacoes" />
+        <h3>Equipe</h3>
+        <h2>Acessar</h2>
+        <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__image__logo">
+            <img src="assets/SupremoCRM.png" alt="supremoCRMLogo" />
+          </div>
+          <p>
+            Nossa equipe de profissionais experientes está comprometida em oferecer a você
+            um serviço excepcional, profundo conhecimento de mercado e
+            soluções personalizadas, adaptadas às suas necessidades específicas.
+          </p>
+          <div class="footer__socials">
+            <span>
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <a href="#home">Página Inicial</a>
+          <a href="">Buscar Imóveis</a>
+          <a href="">Empreendimentos</a>
+          <a href="">Anuncie seu Imóvel</a>
+          <a href="#about">Sobre Nós</a>
+          <a href="#exclusivos">Exclusivos</a>
+          <a href="#contact">Contato</a>
+          <a href="#informacoes">Mais Informações</a>
+        </div>
+        <div class="footer__col">
+          <h4>Recursos</h4>
+          <a href="#">Termos</a>
+          <a href="#">Condições</a>
+          <a href="#">Política de Privacidade</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contato</h4>
+          <a href="#">
+            <span><i class="ri-mail-line"></i></span> supremocrm@gmail.com
+          </a>
+          <a href="#">
+            <span><i class="ri-phone-line"></i></span> (47) 98765-4321
+          </a>
+        </div>
+      </div>
+      <!-- Linha separadora -->
+      <div class="footer__line"></div>
+      <div class="footer__bar__one">
+        Copyright © 2025 Supremo CRM. Todos os direitos reservados.
+      </div>
+
+      <div class="footer__bar__two">
+        Site desenvolvido por Supremo CRM
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
