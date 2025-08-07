@@ -48,10 +48,8 @@
 
 .search-btn-wrapper {
   position: relative;
-  left: 68%;
+  left: 900px;
 }
-
-
 /*=======================================================*/
 
 * {
@@ -198,10 +196,10 @@ nav {
 .header__container {
   display: grid;
   grid-template-columns:
-    minmax(0, 0.4fr)
+    minmax(0, 1fr)
     minmax(0, calc(var(--max-width) / 2))
     minmax(0, calc(var(--max-width) / 2))
-    minmax(0, 0.4fr);
+    minmax(0, 1fr);
 }
 
 .header__content {
