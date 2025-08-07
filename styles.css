@@ -45,6 +45,13 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.search-btn-wrapper {
+  position: relative;
+  left: 68%;
+}
+
+
 /*=======================================================*/
 
 * {
@@ -191,10 +198,10 @@ nav {
 .header__container {
   display: grid;
   grid-template-columns:
-    minmax(0, 1fr)
+    minmax(0, 0.4fr)
     minmax(0, calc(var(--max-width) / 2))
     minmax(0, calc(var(--max-width) / 2))
-    minmax(0, 1fr);
+    minmax(0, 0.4fr);
 }
 
 .header__content {
