@@ -48,7 +48,105 @@
 
 .search-btn-wrapper {
   position: relative;
-  left: 900px;
+  left: 890px;
+}
+
+@media(min-width: 344px) and (max-width: 344px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 360px) and (max-width: 360px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 375px) and (max-width: 375px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 390px) and (max-width: 390px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 412px) and (max-width: 412px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 414px) and (max-width: 414px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 430px) and (max-width: 430px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 30%;
+  }
+}
+
+@media(min-width: 540px) and (max-width: 540px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 36%;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 768px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media(min-width: 820px) and (max-width: 820px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media(min-width: 853px) and (max-width: 853px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media(min-width: 912px) and (max-width: 912px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 42%;
+  }
+}
+
+@media(min-width: 1024px) and (max-width: 1024px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 74%;
+  }
+}
+
+@media(min-width: 1280px) and (max-width: 1280px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 69%;
+  }
 }
 /*=======================================================*/
 
@@ -84,7 +182,9 @@
   color: white;
 }
 
-.section__subheader {
+.section__subheader p{
+  padding: 50px;
+  text-align: justify;
   color: var(--text-light);
 }
 
@@ -193,8 +293,17 @@ nav {
   background-color: var(--extra-light);
 }
 
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-light .navbar-toggler:hover {
+  border-color: white;
+}
+
 .header__container {
   display: grid;
+  right: 25px;
   grid-template-columns:
     minmax(0, 1fr)
     minmax(0, calc(var(--max-width) / 2))
@@ -362,6 +471,15 @@ nav {
 .info__imoveis__box span {
   position: absolute;
   bottom: 20px;
+  right: 10px;
+  z-index: 2;
+  font-size: 15px;
+  color: white;
+}
+
+.info__imoveis__box #map-one, #map-two, #map-three {
+  position: absolute;
+  bottom: 20px;
   right: 20px;
   z-index: 2;
   font-size: 15px;
@@ -429,6 +547,60 @@ div.descricao__three {
   background-color: var(--white);
   border-radius: 5px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media(min-width:344px) and (max-width:344px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:360px) and (max-width:360px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:375px) and (max-width:375px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:390px) and (max-width:390px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:412px) and (max-width:412px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:414px) and (max-width:414px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:430px) and (max-width:430px) {
+  .section__subheader {
+    font-size: 46%;
+  }
+}
+
+@media(min-width:540px) and (max-width:540px) {
+  .section__subheader {
+    font-size: 60%;
+  }
+}
+
+@media(min-width:768px) and (max-width:768px) {
+  .section__subheader {
+    font-size: 90%;
+  }
 }
 
 .about_content {

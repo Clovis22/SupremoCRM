@@ -7,29 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Supremo CRM</title>
 </head>
 <body>
-    <nav>
         <div class="nav__bar">
-            <div class="header__image__logo" id="home">
-              <a href="#home">
-                <img src="assets/SupremoCRM.png" alt="supremoCRMLogo" />
-              </a>
-            </div>
-            <div class="nav__logo"></div>
-            <ul class="nav__links">
-                <li class="link"><a href="#home">INÍCIO</a></li>
-                <li class="link"><a href="#about">SOBRE</a></li>
-                <li class="link"><a href="#exclusivos">EXCLUSIVOS</a></li>
-                <li class="link"><a href="#contact">CONTATO</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm" id="home">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="assets/SupremoCRM.png" alt="supremoCRMLogo" height="200" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><b><a class="nav-link" style="color: white;" href="#home">INÍCIO</a></b></li>
+            <li class="nav-item"><b><a class="nav-link" style="color: white;" href="#about">SOBRE</a></b></li>
+            <li class="nav-item"><b><a class="nav-link" style="color: white;" href="#exclusivos">EXCLUSIVOS</a></b></li>
+            <li class="nav-item"><b><a class="nav-link" style="color: white;" href="#contact">CONTATO</a></b></li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <header class="header">
+    <header class="header bg-light py-5">
       <div class="header__container">
         <div class="header__content">
           <h1>Imóveis na Praia Brava e Fazenda em Itajaí</h1>
@@ -49,8 +56,10 @@
            <i class="text-white fa-solid fa-arrow-right"></i>
         </a>
       </div>
+      
       <div class="header__container">
         <div class="header__content">
+          
           <h1>Uma casa construída e única com amor e sonhos</h1>
           <p>
             Descubra uma seleção criteriosa de casas, apartamentos e imóveis comerciais,
@@ -63,6 +72,7 @@
             <button class="btn btn__primary">Saiba Mais</button>
           </div>
         </div>
+      
       </div>
     </header>
 
@@ -74,55 +84,59 @@
         <h5>O que nossos visitantes mais procuram em nosso site.</h5>
       </div>
     
-      <div class="info__imoveis__boxes">
-        <div class="info__imoveis__image__one info__imoveis__box">
-          <img src="assets/Itajai.jpg" alt="imoveis" />
-          <h3>Itajaí</h3>
-          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-one"></i></span>Santa Catarina</h2>
-          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
-        </div>
-    
-        <div class="info__imoveis__image__two info__imoveis__box">
-          <img src="assets/PraiaBrava.jpg" alt="imoveis" />
-          <h3>Praia Brava</h3>
-          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-two"></i></span>Santa Catarina</h2>
-          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="info__imoveis__image__one info__imoveis__box" style="height: 300px;">
+            <img src="assets/Itajai.jpg" alt="imoveis" />
+            <h3>Itajaí</h3>
+            <h2><span id="map-one"><i class="ri-map-pin-line" id="ri-map-pin-line-one"></i></span>Santa Catarina</h2>
+            <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamentos no Bairro Fazenda</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamentos com 3 quartos em Itajaí</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Lançamentos em Itajaí</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamentos acima do 100m&sup2; em Itajaí</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamentos Mobiliados em Itajaí</b></span></p>
+            <a href="#"><p class="text-danger"><b>Ver todos imóveis</b></p></a>
+          </div>
         </div>
 
-        <div class="info__imoveis__image__three info__imoveis__box">
-          <img src="assets/BalnearioCamboriu.jpg" alt="imoveis" />
-          <h3>Bauneário Camboriú</h3>
-          <h2><span><i class="ri-map-pin-line" id="ri-map-pin-line-three"></i></span>Santa Catarina</h2>
-          <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+        <div class="col-12 col-md-4">
+          <div class="info__imoveis__image__two info__imoveis__box" style="height: 300px;">
+            <img src="assets/PraiaBrava.jpg" alt="imoveis" />
+            <h3>Praia Brava</h3>
+            <h2><span id="map-two"><i class="ri-map-pin-line" id="ri-map-pin-line-two"></i></span>Santa Catarina</h2>
+            <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamentos na Praia Brava</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Mobiliados na Praia Brava</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Frente mar na Praia Brava</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>3 quartos na Praia Brava</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Lançamentos na Praia Brava</b></span></p>
+            <a href="#"><p class="text-danger"><b>Ver todos imóveis</b></p></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="info__imoveis__image__three info__imoveis__box" style="height: 300px;">
+            <img src="assets/BalnearioCamboriu.jpg" alt="imoveis" />
+            <h3>Bauneário Camboriú</h3>
+            <h2><span id="map-three"><i class="ri-map-pin-line" id="ri-map-pin-line-three"></i></span>Santa Catarina</h2>
+            <a href=""><span><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Cobertura Balneário Camboriú</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Apartamento em Balneário Camboriú</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Balneário Camboriú 3 quartos</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Frente mar Balneário Camboriú</b></span></p>
+            <p><span class="text-secondary"><i class="fa-solid fa-arrow-right"></i> <b>Mobiliados em Balneário Camboriú</b></span></p>
+            <a href="#"><p class="text-danger"><b>Ver todos imóveis</b></p></a>
+          </div>
         </div>
       </div>
-    </section> 
-    <div class="descricao__container"> 
-      <div class="descricao__one">
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos no Bairro Fazenda</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos com 3 quartos em Itajaí</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Lançamentos em Itajaí</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos acima do 100m&sup2; em Itajaí</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos Mobiliados em Itajaí</b></span></p>
-        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
-      </div>
-      <div class="descricao__two">
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamentos na Praia Brava</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Mobiliados na Praia Brava</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Frente mar na Praia Brava</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>3 quartos na Praia Brava</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Lançamentos na Praia Brava</b></span></p>
-        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
-      </div>
-      <div class="descricao__three">
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Cobertura Balneário Camboriú</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Apartamento em Balneário Camboriú</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Balneário Camboriú 3 quartos</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Frente mar Balneário Camboriú</b></span></p>
-        <p><span style="color: gray;"><span><i class="fa-solid fa-arrow-right"></i></span><b>Mobiliados em Balneário Camboriú</b></span></p>
-        <a href=""><p><span style="color: red;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Ver todos imóveis</b></span></p></a>
-      </div>
-    </div>
+    </section>
 
     <section class="section__container descricao__container" id="descricao">
       <!-- Linha separadora -->
@@ -628,6 +642,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 
 </body>
