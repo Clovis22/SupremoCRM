@@ -148,6 +148,13 @@
     left: 69%;
   }
 }
+
+@media(min-width: 2400px) and (max-width: 2400px) {
+  .search-btn-wrapper {
+    position: relative;
+    left: 60%;
+  }
+}
 /*=======================================================*/
 
 * {
